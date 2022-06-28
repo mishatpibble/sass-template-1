@@ -1,0 +1,118 @@
+section .col-8 img:nth-child(2) {
+  position: relative;
+  right: -311px;
+  top: -293px;
+  opacity: 0.7;
+}
+
+/**************************************************/
+section:nth-child(2n-1) img {
+  position: relative !important;
+  top: 47px;
+  left: -50px;
+  opacity: 0.7;
+}
+
+section:nth-child(2n) img {
+  position: relative !important;
+  top: 47px;
+  left: -50px;
+  opacity: 0.7;
+  left: auto;
+  right: -789px;
+}
+
+.container > .row > .col > div {
+  border-radius: 2rem !important;
+  background-size: cover !important;
+}
+
+#blue {
+  padding-bottom: 3rem;
+}
+
+#part-0 {
+  padding-top: 3rem;
+}
+
+#part-1 .container > .row > .col > div {
+  border-radius: 3rem !important;
+  background: url(https://egglabs.pibble.co/tmp/sass01/02/assets/img/2.jpg);
+  filter: saturate(0.2);
+}
+#part-1 .container > .row > .col > div h2 {
+  color: black;
+}
+
+#part-2 .container > .row > .col > div {
+  background: url(https://egglabs.pibble.co/tmp/sass01/02/assets/img/3.jpg);
+}
+
+#part-3 .container > .row > .col > div {
+  background: url(https://egglabs.pibble.co/tmp/sass01/02/assets/img/4.jpg);
+}
+
+h2 {
+  font: normal normal bold 40px/45px Poppins;
+  letter-spacing: 0px;
+  color: white;
+}
+
+p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.row:nth-child(2) .col-4.align-self-center div {
+  background: #352A84 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+}
+.row:nth-child(2) .col-4.align-self-center div p {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.row:nth-child(2) .col-4.align-self-center .darkerbg {
+  background: #19326a;
+}
+
+section#blue {
+  background: #0F054C;
+}
+
+h4 {
+  font: normal normal normal 32px/32px Poppins;
+  letter-spacing: 0px;
+  color: #0F054C;
+}
+
+section p {
+  text-align: left;
+  font: normal normal normal 16px/32px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+section {
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+}
+
+h3 {
+  text-align: left;
+  font: normal normal bold 32px/32px Poppins;
+  letter-spacing: 0px;
+  color: #0F054C;
+}
+
+section#part-0 img:nth-child(2n-1) {
+  position: initial !important;
+}
+
+section#part-0 img:nth-child(2n) {
+  position: relative !important;
+}
