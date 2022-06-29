@@ -18,17 +18,21 @@ $p-paddings: 1rem, 2rem, 3rem;
 $section-paddings: 0rem, 2rem, 3rem;
 
 @mixin h2-rule {
-    font: normal normal bold 40px/45px Poppins;
+    // font: normal normal bold 40px/45px Poppins;
 letter-spacing: 0px;
     color:white;
+    font-family: Poppins;
+    font-weight:600 !important;
 }
 
 
 @mixin h3-part0 {
     text-align: left;
-font: normal normal bold 32px/32px Poppins;
+
 letter-spacing: 0px;
 color: $primary-font-color;
+    font-family:Poppins;
+    font-weight:bold !important;
 }
 
 @mixin section-rule {
@@ -46,9 +50,11 @@ padding-top: 2rem ;
 }
 
 @mixin h4-rule {
-    font: normal normal normal 32px/32px Poppins;
+    // font: normal normal normal 32px/32px Poppins;
     letter-spacing: 0px;
 color: $primary-font-color;
+    font-family:Poppins;
+    
 }
 
 
