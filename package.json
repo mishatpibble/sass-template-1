@@ -1,0 +1,24 @@
+{
+  "name": "sass-template",
+  "version": "1.0.0",
+  "description": "npm init base git sass test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishatpibble/sass-template.git"
+  },
+  "keywords": [
+    "sass",
+    "git",
+    "test"
+  ],
+  "author": "mish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishatpibble/sass-template/issues"
+  },
+  "homepage": "https://github.com/mishatpibble/sass-template#readme"
+}
