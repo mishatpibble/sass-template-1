@@ -98,7 +98,7 @@ section:nth-child(2n) img{
 }
 #part-1 .container > .row > .col > div {
     @include box-rounded(3rem);
-    background: url(http://192.168.0.20:8000/assets/img/2.jpg);
+    background: url(../assets/img/2.jpg);
 filter: saturate(0.2);
     
     h2 {
@@ -106,10 +106,10 @@ filter: saturate(0.2);
     }
 }
 #part-2 .container > .row > .col > div {
-background: url(http://192.168.0.20:8000/assets/img/3.jpg);
+background: url(../assets/img/3.jpg);
 }
 #part-3 .container > .row > .col > div {
-background: url(http://192.168.0.20:8000/assets/img/4.jpg);
+background: url(../assets/img/4.jpg);
 }
 
 
