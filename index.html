@@ -5,14 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>for_sassy</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" id="theme-link" href="./css/1st.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,600i,700,700i&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/1st.compiled.css">
-    <link rel="stylesheet" href="assets/css/starsright.compiled.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+
+<style>
+
+    button.btn-toggle {
+        position: fixed;
+    left: 5px;
+    top: 5px;
+    color: darkslategray;
+    width: auto;
+    min-width: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+</style>
+
 </head>
 
 <body>
+    <button class="btn-toggle">Change theme</button>
     <section id="blue">
         <div class="row justify-content-center">
             <div class="col-6 align-self-center">
@@ -89,6 +105,23 @@
         </div>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        const btn = document.querySelector(".btn-toggle");
+       
+        const theme = document.querySelector("#theme-link");
+       
+        btn.addEventListener("click", function() {
+         
+          if (theme.getAttribute("href") == "./css/1st.min.css") {
+            
+            theme.href = "./css/1st-dark.min.css";
+            
+          } else {
+            
+            theme.href = "./css/1st.min.css";
+          }
+        });
+    </script>
 </body>
 
 </html>

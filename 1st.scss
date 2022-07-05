@@ -1,5 +1,11 @@
 @use 'stars1';
 
+$blue:    #0F054C;
+$dark: #19326a;
+
+
+@import './node_modules/bootstrap/scss/bootstrap.scss'; 
+
 @mixin starleft {
     position: relative !important;
     top: 47px;
@@ -11,9 +17,10 @@ $rightstar: -789px;
 @mixin starright {
     left:auto;
     right: $rightstar;
-}
+} 
 
-$primary-font-color: #0F054C;
+
+$primary-font-color: $primary;
 $p-paddings: 1rem, 2rem, 3rem;
 $section-paddings: 0rem, 2rem, 3rem;
 
@@ -23,7 +30,7 @@ letter-spacing: 0px;
     color:white;
     font-family: Poppins;
     font-weight:600 !important;
-}
+} 
 
 
 @mixin h3-part0 {
@@ -86,7 +93,7 @@ section:nth-child(2n) img{
 }
 #part-1 .container > .row > .col > div {
     @include box-rounded(3rem);
-    background: url(http://192.168.0.20:8000/assets/img/2.jpg);
+    background: url(../assets/img/2.jpg);
 filter: saturate(0.2);
     
     h2 {
@@ -94,10 +101,10 @@ filter: saturate(0.2);
     }
 }
 #part-2 .container > .row > .col > div {
-background: url(http://192.168.0.20:8000/assets/img/3.jpg);
+background: url(../assets/img/3.jpg);
 }
 #part-3 .container > .row > .col > div {
-background: url(http://192.168.0.20:8000/assets/img/4.jpg);
+background: url(../assets/img/4.jpg);
 }
 
 
@@ -130,12 +137,12 @@ padding-bottom: min($p-paddings...);
         }
     }
     .darkerbg {
-        background: #19326a;
+        background:  $dark;
     }
 }
 
 section#blue  {
-    background: $primary-font-color;
+    background: $primary;
 }
 h4 {
     @include h4-rule;

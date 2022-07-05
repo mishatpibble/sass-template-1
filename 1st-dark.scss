@@ -1,0 +1,175 @@
+@use 'stars1';
+
+$blue:    #0F054C;
+$dark: #19326a;
+
+
+@import './node_modules/bootstrap/scss/bootstrap.scss'; 
+@import './node_modules/bootstrap/scss/_reboot.scss'; 
+@import './node_modules/bootstrap/scss/_variables.scss'; 
+
+body {
+    background-color: $black;
+}
+@mixin starleft {
+    position: relative !important;
+    top: 47px;
+    left: -50px;
+    opacity: 0.7;
+    }
+$rightstar: -789px;
+
+@mixin starright {
+    left:auto;
+    right: $rightstar;
+} 
+
+
+$primary-font-color: $secondary;
+$p-paddings: 1rem, 2rem, 3rem;
+$section-paddings: 0rem, 2rem, 3rem;
+
+@mixin h2-rule {
+    // font: normal normal bold 40px/45px Poppins;
+letter-spacing: 0px;
+    color:$black;
+    font-family: Poppins;
+    font-weight:600 !important;
+} 
+
+
+@mixin h3-part0 {
+    text-align: left;
+
+letter-spacing: 0px;
+color: $secondary;
+    font-family:Poppins;
+    font-weight:bold !important;
+}
+
+@mixin section-rule {
+    padding-bottom: min($section-paddings...); 
+padding-top: 0rem ; 
+}
+
+@mixin p-rule {
+    text-align: left;
+font: normal normal normal 16px/32px Poppins;
+letter-spacing: 0px;
+color: $white;    
+    padding-bottom: 2rem ; 
+padding-top: 2rem ;
+}
+
+@mixin h4-rule {
+    // font: normal normal normal 32px/32px Poppins;
+    letter-spacing: 0px;
+color: $secondary;
+    font-family:Poppins;
+    
+}
+
+
+
+@mixin box-rounded($rounding) {    
+border-radius: $rounding !important; 
+    }
+/**************************************************/
+section:nth-child(2n-1) img {
+    @include starleft;
+}
+section:nth-child(2n) img{
+    @include starleft;
+    @include starright;
+}
+
+.container > .row > .col > div {
+    @include box-rounded(2rem);
+    background-size:cover !important;
+
+}
+
+#blue {
+    padding-bottom:max($section-paddings...); 
+}
+
+#part-0 {
+    padding-top:max($section-paddings...);
+}
+#part-1 .container > .row > .col > div {
+    @include box-rounded(3rem);
+    background: url(http://192.168.0.20:8000/assets/img/2.jpg);
+filter: saturate(0.2);
+    
+    h2 {
+        color: $white;
+    }
+}
+#part-2 .container > .row > .col > div {
+background: url(http://192.168.0.20:8000/assets/img/3.jpg);
+}
+#part-3 .container > .row > .col > div {
+background: url(http://192.168.0.20:8000/assets/img/4.jpg);
+}
+
+
+
+h2 {
+    @include h2-rule;
+}
+
+
+p {
+  padding-top: min($p-paddings...);
+padding-bottom: min($p-paddings...);
+}
+
+
+.row:nth-child(2) .col-4.align-self-center {
+    div {
+        background: #352A84 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+
+        
+        
+        p {
+font-size: 30px;
+text-align:center;
+        margin-bottom:0;
+  padding-top: min($p-paddings...);
+padding-bottom: min($p-paddings...);
+
+        }
+    }
+    .darkerbg {
+        background:  $gray-500;
+    }
+}
+
+section#blue  {
+    background: $secondary;
+}
+h4 {
+    @include h4-rule;
+    
+}
+
+
+section { 
+p {
+    @include p-rule;
+    }
+}
+section {
+    @include section-rule;
+}
+
+h3 {
+    @include h3-part0;
+}
+section#part-0 img:nth-child(2n - 1) {
+    position: initial !important;
+}
+section#part-0 img:nth-child(2n) {
+    position: relative !important;
+}
